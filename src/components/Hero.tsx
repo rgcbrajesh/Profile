@@ -193,8 +193,10 @@ export default function Hero() {
             </button>
 
             <a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); handleScrollTo("contact"); }}
+              href="/Brijesh_Rajput_Resume.pdf"
+              download="Brijesh_Rajput_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="col-span-2 sm:col-span-1 flex items-center justify-center gap-1.5 sm:gap-2 bg-slate-900/60 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 text-slate-300 hover:text-white font-semibold px-2.5 sm:px-4 py-2.5 sm:py-3 rounded-xl transition-all duration-300 text-xs sm:text-sm md:text-base"
             >
               <Download size={14} className="shrink-0" />

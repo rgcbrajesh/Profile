@@ -66,8 +66,8 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-[#0F172A]/85 backdrop-blur-md border-b border-slate-800/80 shadow-lg py-4"
-          : "bg-transparent py-6"
+        ? "bg-[#0F172A]/85 backdrop-blur-md border-b border-slate-800/80 shadow-lg py-4"
+        : "bg-transparent py-6"
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex justify-between items-center">
@@ -94,8 +94,8 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => handleLinkClick(e, link.href)}
                   className={`text-sm font-medium tracking-wide transition-all duration-300 relative py-1 hover:text-white ${activeSection === link.href.substring(1)
-                      ? "text-[#2563EB]"
-                      : "text-slate-300"
+                    ? "text-[#2563EB]"
+                    : "text-slate-300"
                     }`}
                 >
                   {link.label}
@@ -108,8 +108,10 @@ export default function Navbar() {
           </ul>
 
           <a
-            href="#contact"
-            onClick={(e) => handleLinkClick(e, "#contact")}
+            href="/Brijesh_Rajput_Resume.pdf"
+            download="Brijesh_Rajput_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white text-xs font-semibold px-5 py-2.5 rounded-lg border border-blue-500/30 hover:border-blue-400/50 shadow-[0_0_15px_rgba(37,99,235,0.15)] hover:shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all duration-300"
           >
             <FileText size={14} />
@@ -139,8 +141,8 @@ export default function Navbar() {
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className={`text-lg font-medium block py-2 transition-all ${activeSection === link.href.substring(1)
-                    ? "text-[#2563EB] pl-2 border-l-2 border-[#2563EB]"
-                    : "text-slate-300 hover:text-white"
+                  ? "text-[#2563EB] pl-2 border-l-2 border-[#2563EB]"
+                  : "text-slate-300 hover:text-white"
                   }`}
               >
                 {link.label}
@@ -150,8 +152,10 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="#contact"
-          onClick={(e) => handleLinkClick(e, "#contact")}
+          href="/Brijesh_Rajput_Resume.pdf"
+          download="Brijesh_Rajput_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg text-sm transition-all shadow-[0_4px_12px_rgba(37,99,235,0.2)]"
         >
           <FileText size={16} />
