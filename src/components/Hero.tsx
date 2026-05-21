@@ -108,7 +108,7 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-[450px] h-[450px] bg-indigo-600/10 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center z-10">
 
         {/* Left: Content Info */}
         <div className="lg:col-span-6 flex flex-col items-start text-left">
@@ -174,31 +174,31 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+            className="grid grid-cols-2 gap-2.5 w-full sm:flex sm:flex-row sm:gap-4 sm:w-auto"
           >
             <button
               onClick={() => handleScrollTo("projects")}
-              className="group flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3.5 rounded-xl border border-blue-500/20 shadow-[0_4px_14px_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.35)] transition-all duration-300"
+              className="group flex items-center justify-center gap-1.5 sm:gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-2.5 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-blue-500/20 shadow-[0_4px_14px_rgba(37,99,235,0.2)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.35)] transition-all duration-300 text-xs sm:text-sm md:text-base shrink-0 sm:shrink"
             >
               <span>View Projects</span>
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300 shrink-0" />
             </button>
 
             <button
               onClick={() => handleScrollTo("contact")}
-              className="flex items-center justify-center gap-2 bg-slate-800/90 hover:bg-slate-700/95 text-slate-200 hover:text-white font-semibold px-6 py-3.5 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-all duration-300"
+              className="flex items-center justify-center gap-1.5 sm:gap-2 bg-slate-800/90 hover:bg-slate-700/95 text-slate-200 hover:text-white font-semibold px-2.5 sm:px-4 py-2.5 sm:py-3 rounded-xl border border-slate-700/50 hover:border-slate-600 transition-all duration-300 text-xs sm:text-sm md:text-base shrink-0 sm:shrink"
             >
-              <Mail size={16} />
+              <Mail size={14} className="shrink-0" />
               <span>Contact Me</span>
             </button>
 
             <a
               href="#contact"
-              onClick={() => handleScrollTo("contact")}
-              className="flex items-center justify-center gap-2 text-slate-300 hover:text-white font-semibold px-6 py-3.5 border-b border-transparent hover:border-blue-500/50 transition-all duration-300 text-sm"
+              onClick={(e) => { e.preventDefault(); handleScrollTo("contact"); }}
+              className="col-span-2 sm:col-span-1 flex items-center justify-center gap-1.5 sm:gap-2 bg-slate-900/60 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 text-slate-300 hover:text-white font-semibold px-2.5 sm:px-4 py-2.5 sm:py-3 rounded-xl transition-all duration-300 text-xs sm:text-sm md:text-base"
             >
-              <Download size={16} />
-              <span>Resume</span>
+              <Download size={14} className="shrink-0" />
+              <span>Download Resume</span>
             </a>
           </motion.div>
 
@@ -211,7 +211,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-full max-w-xl bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/5 flex flex-col h-[350px] sm:h-[400px] backdrop-blur-sm"
+            className="w-full max-w-xl bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/5 flex flex-col h-[300px] sm:h-[380px] lg:h-[400px] backdrop-blur-sm"
           >
             {/* Terminal Window Header */}
             <div className="flex items-center justify-between px-4 py-3 bg-slate-950 border-b border-slate-800/80">
@@ -231,8 +231,8 @@ export default function Hero() {
                   key={tab.id}
                   onClick={() => handleTabClick(tab.id)}
                   className={`flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 text-[10px] sm:text-xs font-mono transition-all border-r border-slate-800 whitespace-nowrap ${activeTab === tab.id
-                      ? "bg-slate-900 text-blue-400 font-semibold border-b-2 border-b-blue-500"
-                      : "text-slate-500 hover:bg-slate-800/30 hover:text-slate-300"
+                    ? "bg-slate-900 text-blue-400 font-semibold border-b-2 border-b-blue-500"
+                    : "text-slate-500 hover:bg-slate-800/30 hover:text-slate-300"
                     }`}
                 >
                   {tab.icon}
@@ -242,7 +242,7 @@ export default function Hero() {
             </div>
 
             {/* Terminal Content Box */}
-            <div className="flex-1 p-4 sm:p-5 font-mono text-[10px] sm:text-xs text-slate-300 overflow-y-auto leading-relaxed flex flex-col justify-start align-baseline bg-slate-950/20">
+            <div className="flex-1 p-3.5 sm:p-5 font-mono text-[10px] sm:text-xs text-slate-300 overflow-y-auto leading-relaxed flex flex-col justify-start align-baseline bg-slate-950/20">
 
               {/* Active Command Input line */}
               <div className="flex items-start gap-2 text-slate-400 mb-3">

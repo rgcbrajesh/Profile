@@ -90,12 +90,12 @@ export default function TechStack() {
   const activeCategoryData = categories.find((c) => c.id === activeCategory) || categories[0];
 
   return (
-    <section id="skills" className="relative py-24 bg-[#0F172A] border-t border-slate-900">
+    <section id="skills" className="relative py-24 bg-[#0F172A] border-t border-slate-900 overflow-hidden">
       {/* Visual background lights */}
       <div className="absolute top-1/4 right-0 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl" />
 
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 w-full z-10 relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 w-full z-10 relative">
         
         {/* Headings */}
         <div className="flex flex-col items-center text-center mb-16">
@@ -120,7 +120,7 @@ export default function TechStack() {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`flex-shrink-0 md:flex-shrink w-[140px] md:w-auto snap-start flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-xs sm:text-sm font-semibold font-mono tracking-wide transition-all duration-300 ${
+              className={`flex-shrink-0 md:flex-shrink w-[125px] sm:w-[140px] md:w-auto snap-start flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-xs sm:text-sm font-semibold font-mono tracking-wide transition-all duration-300 ${
                 activeCategory === cat.id
                   ? "bg-blue-600 text-white shadow-md shadow-blue-500/20"
                   : "text-slate-400 hover:text-slate-200 hover:bg-slate-900/40"
@@ -133,7 +133,7 @@ export default function TechStack() {
         </div>
 
         {/* Dynamic Skill Details Grid */}
-        <div className="bg-slate-900/50 border border-slate-800/80 rounded-3xl p-6 sm:p-10 min-h-[300px] shadow-2xl relative overflow-hidden backdrop-blur-sm">
+        <div className="bg-slate-900/50 border border-slate-800/80 rounded-3xl p-4 sm:p-10 min-h-[300px] shadow-2xl relative overflow-hidden backdrop-blur-sm">
           
           <AnimatePresence mode="wait">
             <motion.div
@@ -147,7 +147,7 @@ export default function TechStack() {
               {activeCategoryData.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="flex items-center justify-between p-4 bg-slate-950/30 hover:bg-slate-950/70 border border-slate-800/60 hover:border-slate-700/50 rounded-xl transition-all duration-300 group"
+                  className="flex flex-col xs:flex-row xs:items-center justify-between gap-2 p-4 bg-slate-950/30 hover:bg-slate-950/70 border border-slate-800/60 hover:border-slate-700/50 rounded-xl transition-all duration-300 group"
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-1.5 h-1.5 bg-blue-500 rounded-full group-hover:scale-150 transition-all duration-300" />

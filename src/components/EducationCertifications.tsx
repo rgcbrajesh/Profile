@@ -6,7 +6,7 @@ import { GraduationCap, Award, MapPin, CheckCircle } from "lucide-react";
 export default function EducationCertifications() {
   return (
     <section className="relative py-20 bg-[#0F172A] border-t border-slate-900">
-      <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           
@@ -75,7 +75,7 @@ export default function EducationCertifications() {
               </span>
             </div>
 
-            <div className="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-lg flex items-start gap-4">
+            <div className="bg-slate-900/40 border border-slate-800 rounded-3xl p-4 sm:p-8 shadow-lg flex flex-col sm:flex-row items-start gap-4">
               <div className="p-3 bg-blue-500/10 border border-blue-500/20 rounded-2xl text-blue-400 shrink-0">
                 <Award size={24} />
               </div>

@@ -147,7 +147,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-24 bg-[#0F172A]">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative">
         
         {/* Decorative Grid Overlay background */}
         <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-20 -z-10" />
@@ -180,7 +180,7 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-slate-800/30 border border-slate-800 rounded-3xl p-6 lg:p-10 shadow-2xl relative backdrop-blur-sm overflow-hidden"
+                className="bg-slate-800/30 border border-slate-800 rounded-3xl p-4 sm:p-8 lg:p-10 shadow-2xl relative backdrop-blur-sm overflow-hidden"
               >
                 
                 {/* Decorative glow inside card */}
@@ -221,7 +221,7 @@ export default function Projects() {
                     </div>
 
                     {/* Highlight Box */}
-                    <div className="relative border-l-2 border-blue-500 bg-blue-500/5 p-4 rounded-r-xl shadow-inner mt-4">
+                    <div className="relative border-l-2 border-blue-500 bg-blue-500/5 p-3.5 sm:p-4 rounded-r-xl shadow-inner mt-4">
                       <Sparkles size={16} className="text-blue-400 absolute top-3.5 right-4" />
                       <h4 className="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1 font-mono">
                         Key Lifecycle Ownership
@@ -277,7 +277,7 @@ export default function Projects() {
                     </div>
 
                     {/* Tab Content Box */}
-                    <div className="flex-1 bg-slate-950/20 border border-slate-800/60 rounded-2xl p-4 sm:p-6 min-h-[220px]">
+                    <div className="flex-1 bg-slate-950/20 border border-slate-800/60 rounded-2xl p-3.5 sm:p-6 min-h-[220px]">
                       <AnimatePresence mode="wait">
                         <motion.div
                           key={activeTab}

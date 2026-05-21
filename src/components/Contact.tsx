@@ -48,12 +48,12 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative py-24 bg-[#0F172A] border-t border-slate-900">
+    <section id="contact" className="relative py-24 bg-[#0F172A] border-t border-slate-900 overflow-hidden">
       
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-500/5 rounded-full blur-3xl -z-10" />
 
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         
         {/* Headings */}
         <div className="flex flex-col items-center text-center mb-16">
@@ -80,7 +80,7 @@ export default function Contact() {
               href={channel.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex flex-col items-center justify-center text-center p-8 border rounded-3xl transition-all duration-300 ${channel.bgColor} group relative overflow-hidden bg-slate-900/40 border-slate-800 shadow-xl`}
+              className={`flex flex-col items-center justify-center text-center p-5 sm:p-8 border rounded-3xl transition-all duration-300 ${channel.bgColor} group relative overflow-hidden bg-slate-900/40 border-slate-800 shadow-xl`}
             >
               {/* Background hover light effect */}
               <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

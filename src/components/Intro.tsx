@@ -29,8 +29,8 @@ export default function Intro() {
   ];
 
   return (
-    <section id="who-i-am" className="relative py-24 bg-[#0F172A] border-t border-slate-900">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative">
+    <section id="who-i-am" className="relative py-24 bg-[#0F172A] border-t border-slate-900 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative">
         
         {/* Subtle Decorative glow background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-blue-600/5 rounded-full blur-3xl -z-10" />
@@ -65,9 +65,9 @@ export default function Intro() {
                 I specialize in scalable frontend systems, mobile application development, deployment workflows and automation-based solutions. I have worked on real-world business software, engineering tooling and cloud-integrated applications with hands-on experience in AWS infrastructure and mobile publishing pipelines.
               </p>
 
-              <div className="flex items-center gap-4 py-4 px-6 bg-slate-900/60 border border-slate-800 rounded-2xl max-w-lg shadow-inner">
-                <div className="text-2xl sm:text-3xl font-extrabold text-blue-500 font-mono">2.5+</div>
-                <div className="text-xs text-slate-400 font-medium uppercase tracking-wider leading-relaxed">
+              <div className="flex items-center gap-3 sm:gap-4 py-3 px-4 sm:py-4 sm:px-6 bg-slate-900/60 border border-slate-800 rounded-2xl max-w-lg shadow-inner">
+                <div className="text-xl sm:text-3xl font-extrabold text-blue-500 font-mono">2.5+</div>
+                <div className="text-[10px] sm:text-xs text-slate-400 font-medium uppercase tracking-wider leading-relaxed">
                   Years of building professional web, mobile, & cloud software
                 </div>
               </div>

@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0b111e] border-t border-slate-900 py-12">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col items-center text-center gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex flex-col items-center text-center gap-6">
 
         {/* Logo element */}
         <div className="text-lg font-bold tracking-tight text-[#F8FAFC]">

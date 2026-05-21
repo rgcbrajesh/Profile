@@ -44,8 +44,8 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="relative py-24 bg-[#0F172A] border-t border-slate-900">
-      <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 relative">
+    <section id="experience" className="relative py-24 bg-[#0F172A] border-t border-slate-900 overflow-hidden">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 relative">
         
         {/* Glow Effects */}
         <div className="absolute top-10 left-10 w-72 h-72 bg-blue-600/5 rounded-full blur-3xl" />
@@ -102,7 +102,7 @@ export default function Experience() {
               {achievements.map((ach) => (
                 <div
                   key={ach.category}
-                  className="bg-slate-800/20 hover:bg-slate-850/30 border border-slate-800/80 rounded-2xl p-5 sm:p-6 transition-all duration-300 shadow-lg"
+                  className="bg-slate-800/20 hover:bg-slate-850/30 border border-slate-800/80 rounded-2xl p-4 sm:p-6 transition-all duration-300 shadow-lg"
                 >
                   <div className="flex items-center gap-2.5 mb-4 pb-2 border-b border-slate-800/50">
                     {ach.icon}

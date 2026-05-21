@@ -60,7 +60,7 @@ export default function EngineeringHighlights() {
 
   return (
     <section className="relative py-24 bg-[#0F172A] border-t border-slate-900">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 relative">
         
         {/* Headings */}
         <div className="flex flex-col items-center text-center mb-16">
@@ -88,7 +88,7 @@ export default function EngineeringHighlights() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className={`group bg-slate-900/40 hover:bg-slate-900 border border-slate-800/80 rounded-2xl p-6 transition-all duration-300 ${hl.borderGlow} hover:-translate-y-1`}
+              className={`group bg-slate-900/40 hover:bg-slate-900 border border-slate-800/80 rounded-2xl p-4 sm:p-6 transition-all duration-300 ${hl.borderGlow} hover:-translate-y-1`}
             >
               <div className="flex items-center gap-3.5 mb-4">
                 <div className="p-2.5 bg-slate-950 border border-slate-800 rounded-xl group-hover:scale-110 transition-transform duration-300">

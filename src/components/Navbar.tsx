@@ -70,14 +70,14 @@ export default function Navbar() {
           : "bg-transparent py-6"
         }`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex justify-between items-center">
         {/* Logo */}
         <a
           href="#"
           onClick={(e) => handleLinkClick(e, "#")}
           className="group flex flex-col"
         >
-          <span className="text-xl font-bold tracking-tight text-[#F8FAFC]">
+          <span className="text-lg sm:text-xl font-bold tracking-tight text-[#F8FAFC]">
             Brijesh<span className="text-[#2563EB] group-hover:text-blue-400 transition-colors duration-300 font-extrabold">.</span>RAJPUT
           </span>
           <span className="text-[10px] text-slate-400 font-mono tracking-wider uppercase -mt-1 group-hover:text-slate-300 transition-colors duration-300">

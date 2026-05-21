@@ -23,10 +23,14 @@
   
   --font-sans: var(--font-outfit), var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-jetbrains-mono), var(--font-geist-mono), monospace;
+  
+  --breakpoint-xs: 480px;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -34,6 +38,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Custom Webkit Scrollbars for premium feel */
